@@ -10,7 +10,7 @@ class ClienteTest {
         Cliente cliente = new Cliente();
         BaixaRenda.getInstancia().addClienteInapto(cliente);
 
-        assertEquals(false, cliente.casaVerdeEAmarela());
+        assertEquals(false, cliente.FinanciamentocasaVerdeEAmarela());
     }
 
     @Test
@@ -18,7 +18,7 @@ class ClienteTest {
         Cliente cliente = new Cliente();
         Emprestimo.getInstancia().addClienteInapto(cliente);
 
-        assertEquals(false, cliente.casaVerdeEAmarela());
+        assertEquals(false, cliente.FinanciamentocasaVerdeEAmarela());
     }
 
     @Test
@@ -26,14 +26,14 @@ class ClienteTest {
         Cliente cliente = new Cliente();
         NomeSujo.getInstancia().addClienteInapto(cliente);
 
-        assertEquals(false, cliente.casaVerdeEAmarela());
+        assertEquals(false, cliente.FinanciamentocasaVerdeEAmarela());
     }
 
     @Test
     void deveRetornarClienteAptoParaCasaVerdeEAmarela() {
         Cliente cliente = new Cliente();
 
-        assertEquals(true, cliente.casaVerdeEAmarela());
+        assertEquals(true, cliente.FinanciamentocasaVerdeEAmarela());
     }
 
 }

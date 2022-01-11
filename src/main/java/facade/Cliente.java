@@ -2,7 +2,7 @@ package facade;
 
 public class Cliente {
 
-    public boolean casaVerdeEAmarela(){
+    public boolean FinanciamentocasaVerdeEAmarela(){
         return ClienteFacade.verificarPendenciasFinanciamento(this);
     }
 }
